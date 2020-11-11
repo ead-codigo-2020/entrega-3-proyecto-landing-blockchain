@@ -1,67 +1,163 @@
 <!DOCTYPE html>
+<!-- Español -->
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="assets/dist/style.css">
-	<script src="assets/dist/runtime.js"></script>
-	<script src="assets/dist/script.js"></script>
-	<title>Título del documento</title>
+
+	<!-- declarar charset -->
+
+    <meta charset="UTF-8">
+
+	<!-- Viewport responsive -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título -->
+
+    <title>Block Chain</title>
+
+    <!-- link a archivo de estilos css -->
+
+    <link href="css.css" rel="stylesheet">
+
+    <!-- link a funte poppins -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/f5dbe5ce90.js" crossorigin="anonymous"></script>
 </head>
+
+<!-- Cuerpo -->
+
 <body>
-	<div class="container mt-4">
-		<div class="jumbotron">
-			<h1 class="display-4">Plantilla de Bootstrap</h1>
-			<p class="lead">Puedes utilizar esta plantilla para iniciar un proyecto con Bootstrap</p>
-			<hr class="my-4">
-			<p>Revisa más información en la página del repositorio.</p>
-			<a href="https://github.com/ead-codigo-2020/bootstrap-starter" class="btn btn-primary btn-lg" role="button">Ver el repositorio</a>
-			<button type="button" class="btn btn-outline-secondary btn-lg" data-toggle="modal" data-target="#page-modal">Prueba ventana modal</button>
-		</div>
-	</div>
-	<div class="container my-4">
-		<h2 class="display-4">Ejemplo de carrusel</h2>
-		<p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, repudiandae incidunt numquam ab odio laudantium.</p>
-		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-			<div class="carousel-inner">
-			  <div class="carousel-item active">
-				<img src="https://picsum.photos/seed/1/1110/625" class="d-block w-100" alt="Foto aleatoria">
-			  </div>
-			  <div class="carousel-item">
-				<img src="https://picsum.photos/seed/2/1110/625" class="d-block w-100" alt="Foto aleatoria">
-			  </div>
-			  <div class="carousel-item">
-				<img src="https://picsum.photos/seed/3/1110/625" class="d-block w-100" alt="Foto aleatoria">
-			  </div>
-			</div>
-			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			  <span class="sr-only">Anterior</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			  <span class="sr-only">Siguiente</span>
-			</a>
-		  </div>
-	</div>
-	<div id="page-modal" class="modal fade" tabindex="-1" aria-hidden="true" aria-labelledby="#page-modal__title">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 id="page-modal__title" class="modal-title">Título de la ventana modal</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Este es un ejemplo de ventana modal</p>
-					<p>Sirve para comprobar el funcionamiento de las funcionalidades con javascript</p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="wrap">
+        <div class="header">
+            <div class="busqueda">
+                <div class="idbusqueda">
+                     <input class="bus" type="text" name="search" placeholder="Búsqueda">
+                </div>
+            </div>
+            <div class="ibar">
+                <button class ="boton1" onclick="haz()"><i class="fas fa-bars"></i></button>
+                <script>
+function haz() {
+  document.getElementById("sub_ibar").style.display = "block";
+}
+function des() {
+  document.getElementById("sub_ibar").style.display = "none";
+}
+</script>
+            </div>
+            <div id="sub_ibar">
+                <div class="ibar_nav">
+                    <div class="ibar_nav_item"><button class ="boton2" onclick="des()"><i class="far fa-times-circle"></i></button></div>
+                    <div class="ibar_nav_item2"><i class="fas fa-search"></i></div>
+                </div>
+                    <div class="ibar_nav_drop">
+                        <div class="ibar_nav_drop_item"><a href="index.html">Inicio</a></div>
+                        <div class="ibar_nav_drop_item"><a href="definicion.html"> Qué es </a></div>
+                        <div class="ibar_nav_drop_item"><a href="funcionamiento.html">Funcionamiento</a></div>
+                        <div class="ibar_nav_drop_item"><a href="ventajas.html">Ventajas </a></div>
+                         <div class="ibar_nav_drop_item"><a href="usuarios.html"> Usuarios </a></div>
+                    </div>
+            </div>
+            <div class ="title">
+                <a href="index.html">Blockchain</a>
+            </div>
+            <div class="subtitle">
+                Base de datos
+            </div>
+        </div>
+        <div class="barra">
+           <div class="on-sub_barra">
+              <a style="color:#0AA0DB;" href="index.html">Inicio</a>
+           </div>
+           <div class="sub_barra">
+               <a href="definicion.html"> Qué es </a>
+           </div>
+           <div class="sub_barra">
+               <a href="funcionamiento.html">Funcionamiento</a>
+           </div>
+           <div class="sub_barra">
+              <a href="ventajas.html">Ventajas </a>
+           </div>
+            <div class="sub_barra">
+              <a href="usuarios.html"> Usuarios </a>
+           </div>
+        </div>
+        <div class="sub_header">
+            <div class="tit_sub_header">
+                CADENA DE BLOQUES
+            </div>
+            <div class="subtit_sub_header">
+                tecnología descentralizada
+            </div>
+            <div class="img_sub_header">
+                <img alt="imagen fondo banner" style="width: 100%;
+  height: auto; max-width:80vw;" src="src/banner2.png">
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="tit_contenido">
+                Historia 
+            </div>
+                <div class="sub_contenido">
+                    La idea detrás de la tecnología blockchain se describió en 1991, cuando los científicos de investigación Stuart Haber y W. Scott Stornetta introdujeron una solución computacionalmente práctica para los documentos digitales con sello de tiempo para que no pudieran ser modificados o manipulados.
+El sistema usó una cadena de bloques con seguridad criptográfica para almacenar los documentos con sello de tiempo y en 1992 se incorporaron al diseño los árboles Merkle, lo que lo hizo más eficiente al permitir que varios documentos se reunieran en un solo bloque. Sin embargo, esta tecnología no se utilizó y la patente caducó en 2004, cuatro años antes del inicio de Bitcoin.
+<br><br>
+
+A finales de 2008, una persona o un grupo con el seudónimo Satoshi Nakamoto publicó en una lista de correo de criptografía un libro blanco que introdujo un sistema de efectivo electrónico descentralizado entre pares (llamado Bitcoin). Basado en el algoritmo de Prueba de Trabajo de Hashcash, pero en lugar de utilizar una función de computación confiable de hardware como el RPoW, la doble protección contra gastos en Bitcoin fue proporcionada por un protocolo descentralizado de igual a igual para el seguimiento y la verificación de las transacciones. En resumen, los mineros individuales "minan" bitcoin para obtener una recompensa utilizando el mecanismo de prueba de trabajo y luego lo verifican los nodos descentralizados en la red.
+El 3 de enero de 2009, Bitcoin nació cuando el primer bloque de bitcoin fue minado por Satoshi Nakamoto, que tuvo una recompensa de 50 bitcoins. El primer receptor de Bitcoin fue Hal Finney, recibió 10 bitcoins de Satoshi Nakamoto en la primera transacción de bitcoin del mundo el 12 de enero de 2009.
+                </div>
+            </div>
+<div class="item">
+            <div class="tit_contenido">
+                Criptomonedas 
+            </div>
+                <div class="sub_contenido">
+                    Las criptomonedas son unas monedas virtuales con las cuales se pueden intercambiar bienes y servicios a través de una o unas transacciones electrónicas sin necesidad de un intermediario.
+Blockchain nos permite registrar esas transacciones de manera pública y descentralizada, dejando un registro indeleble e incorruptible. Y son precisamente estas características las que permiten que tengamos criptomonedas como el Bitcoin, Ether, Litecoin o Ripple sin tener que preocuparnos por monedas falsas o que estas sean gastadas más de una vez (double spending).
+
+                </div>
+            </div>
+<div class="footer">
+                    <div class="footerdiv">
+                        <div class="f_tit">
+                            Blockchain
+                        </div>
+                        <br>
+                        <div class="f_img">
+                            <img alt="logo" src="src/logo.svg">
+                        </div>
+                        <div class="aed_text">
+                            <p style="font-weight: bold;">Escuela de Arquitectura y Diseño</p>
+ <p style="font-size: 12px;">Pontificia Universidad Católica de Valparíso</p>
+                        </div>
+                        <br>
+
+                        <div class="copy">
+                            2020 Creado por estudiantes de Diseño PUCV
+                        </div>
+                    </div>
+                     <div class="footerdiv2">
+                        <div class="foot_div_2_tit">
+                            ¡Colabora con nosotros!
+                        </div>
+                        <div class="foot_div_2_subtit">
+                            Ingresa tu correo para recibir nuestras noticias
+                        </div>
+                        <div class="newsletter">
+                            <div class="n_input">
+                                 <input class="new" type="text" name="search" placeholder="ejemplo@ejemplo.com">
+                            </div>
+                            <div class="n_submit">
+                                Enviar
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</div>
+       
 </body>
-</html>
